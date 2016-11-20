@@ -333,7 +333,7 @@
       ['b', '%m.tools is zichtbaar?', 'isToolVisible', 'tool A'],
       ['-'],
       ['h', 'als %m.gestures', 'whenGesture', 'tik'],
-      ['w', 'wacht until %m.gestures', 'waitForGesture', 'tik']
+      ['w', 'wacht %m.gestures', 'waitForGesture', 'tik']
     ],  
     menus: {
       hands: ['hand A', 'hand B'],
