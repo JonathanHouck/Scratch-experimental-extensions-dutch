@@ -240,24 +240,76 @@
   };
   
   ext.getFingerX = function(hand, name) {
+
+    if (name == "vinger 1") {
+      name = "finger 1";
+    } else if (name == "vinger 2") {
+      name = "finger 2";
+    } else if (name == "vinger 3") {
+      name = "finger 3";
+    } else if (name = "vinger 4") {
+      name = "finger 4";
+    } else if (name = "vinger 5") {
+      name = "finger 5";
+    }
+
     var finger = getFinger(hand, name);
     if (!finger) return null;
     return Math.round(finger.stabilizedTipPosition[0] * X_SCALE);
   };
 
   ext.getFingerY = function(hand, name) {
+
+    if (name == "vinger 1") {
+      name = "finger 1";
+    } else if (name == "vinger 2") {
+      name = "finger 2";
+    } else if (name == "vinger 3") {
+      name = "finger 3";
+    } else if (name = "vinger 4") {
+      name = "finger 4";
+    } else if (name = "vinger 5") {
+      name = "finger 5";
+    }
+
     var finger = getFinger(hand, name);
     if (!finger) return null;
     return Math.round((finger.stabilizedTipPosition[1] * Y_SCALE) - 300);
   };
   
   ext.getFingerZ = function(hand, name) {
+
+    if (name == "vinger 1") {
+      name = "finger 1";
+    } else if (name == "vinger 2") {
+      name = "finger 2";
+    } else if (name == "vinger 3") {
+      name = "finger 3";
+    } else if (name = "vinger 4") {
+      name = "finger 4";
+    } else if (name = "vinger 5") {
+      name = "finger 5";
+    }
+
     var finger = getFinger(hand, name);
     if (!finger) return null;
     return Math.round(finger.stabilizedTipPosition[2] * Z_SCALE);
   };
 
   ext.isFingerExtended = function(hand, name) {
+
+    if (name == "vinger 1") {
+      name = "finger 1";
+    } else if (name == "vinger 2") {
+      name = "finger 2";
+    } else if (name == "vinger 3") {
+      name = "finger 3";
+    } else if (name = "vinger 4") {
+      name = "finger 4";
+    } else if (name = "vinger 5") {
+      name = "finger 5";
+    }
+
     var finger = getFinger(hand, name);
     if (!finger) return null;
     return finger.extended;
@@ -288,10 +340,32 @@
   };
 
   ext.whenGesture = function(name) {
+
+    if (name == "tik") {
+      name = "tap";
+    } else if (name == "vinger 2") {
+      name = "poke";
+    } else if (name == "por") {
+      name = "veeg";
+    } else if (name = "cirkel") {
+      name = "circle";
+    }
+
     return activeGestures[gestures[name]].active;
   };
 
   ext.waitForGesture = function(name, callback) {
+
+    if (name == "tik") {
+      name = "tap";
+    } else if (name == "vinger 2") {
+      name = "poke";
+    } else if (name == "por") {
+      name = "veeg";
+    } else if (name = "cirkel") {
+      name = "circle";
+    }
+    
     var poller = setInterval(function() {
       if (activeGestures[gestures[name]].active) {
         clearInterval(poller);
