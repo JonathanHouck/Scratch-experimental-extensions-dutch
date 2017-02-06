@@ -11,3 +11,5 @@ Kinect: kinect_dutch_extension.js
 - play with the Dutch version: http://scratchx.org/?url=https://jonathanhouck.github.io/scratch-experimental-extensions-dutch/kinect_dutch_extension.js#scratch
 - play with the original English version on ScratchX: http://scratchx.org/?url=http://stephenhowell.github.io/Kinect2ScratchX3.js#scratch
 - original repository: https://github.com/stephenhowell/stephenhowell.github.io
+
+Watch the Xbox Kinect and ScratchX in action: https://www.facebook.com/jona.houck/videos/10210005565148659/
